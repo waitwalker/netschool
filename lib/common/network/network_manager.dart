@@ -420,7 +420,7 @@ class NetworkAssistant {
           return "https://api.yuwenclub.com/basic/appConfig";
           break;
         default:
-          return AppLoginManager.instance.configModel.serverUrl.apiServer + interface;
+          return "";///AppLoginManager.instance.configModel.serverUrl.apiServer + interface;
           break;
       }
     } else {
