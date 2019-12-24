@@ -23,6 +23,119 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
+  # 列表
+  flutter_staggered_grid_view: ^0.3.0
+
+  # toast
+  fluttertoast: ^3.1.3
+
+  redux: ^3.0.0
+  flutter_redux: ^0.5.3
+
+  # 国际化
+  flutter_localizations:
+    sdk: flutter
+
+  # 刷新
+  pull_to_refresh: ^1.5.0
+
+  # 圆形饼状图
+  flutter_circular_chart: ^0.1.0
+
+  # 随机色
+  random_color: ^1.0.3
+
+  color: ^2.1.1
+
+  # 文本自适应
+  auto_size_text: ^2.0.2+1
+
+  # toast
+  oktoast: ^2.2.0
+
+  # 图片缩放 有插件
+  flutter_drag_scale:
+    git: https://github.com/LiuC520/flutter_drag_scale.git
+
+  # 网络
+  dio: ^2.1.13
+
+  # 网络状态检查
+  connectivity: ^0.4.3+6
+
+  event_bus:  ^1.0.1
+
+  # sqflite
+  sqflite: ^1.1.6+3
+
+  # 截图
+  screenshot: ^0.1.1
+
+  intl: ^0.16.0
+
+  # 录音
+  flutter_sound: ^1.5.2
+
+  permission_handler: ^3.2.2
+
+  path_provider: ^1.2.0
+
+  flutter_downloader: ^1.1.9
+
+  easy_dialog: ^1.0.5
+
+  # 加密
+  crypto: ^2.1.2
+
+  # 转换
+  convert: ^2.1.1
+
+  # 用户偏好
+  shared_preferences: ^0.5.3+4
+
+  # 抽屉
+  flutter_inner_drawer: ^0.4.0
+
+  webview_flutter: ^0.3.13
+
+  # pdf
+  flutter_plugin_pdf_viewer: ^1.0.7
+
+  cached_network_image: ^2.0.0-rc.1
+
+  # 大图浏览
+  photo_view: ^0.5.0
+
+  # 转场动画
+  page_transition: ^1.1.5
+
+  audioplayers: ^0.13.2
+
+  chewie: ^0.9.8
+
+  video_player: ^0.10.2+1
+
+  flutter_ijkplayer: ^0.3.5+1
+
+  image_picker: ^0.6.1+4
+
+  flare_loading: ^2.1.0
+
+  date_format: ^1.0.8
+
+  transparent_image: ^1.0.0
+
+  device_info: ^0.4.1+2
+
+  package_info: ^0.4.0+11
+
+  # 选择器
+  flutter_picker: ^1.1.0
+
+  flutter_webview_plugin:
+    git:
+      url: https://github.com/waitwalker/flutter_webview_plugin.git
+      ref: 'master'
 
 dev_dependencies:
   flutter_test:
