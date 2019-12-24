@@ -1,5 +1,4 @@
-
-import 'package:flutter_dayuwen/common/runtime_data/runtime_data.dart';
+import 'package:NetSchool/common/runtime_data/runtime_data.dart';
 import 'package:redux/redux.dart';
 
 final RuntimeDataReducer = combineReducers<RuntimeData>([
