@@ -14,8 +14,6 @@ PODS:
   - flutter_ijkplayer (0.0.1):
     - Flutter
     - FlutterIJK (~> 0.1.0)
-  - flutter_plugin_pdf_viewer (1.0.5):
-    - Flutter
   - flutter_sound (0.0.1):
     - Flutter
   - flutter_webview_plugin (0.0.1):
@@ -61,7 +59,6 @@ DEPENDENCIES:
   - flutter_downloader (from `.symlinks/plugins/flutter_downloader/ios`)
   - flutter_drag_scale (from `.symlinks/plugins/flutter_drag_scale/ios`)
   - flutter_ijkplayer (from `.symlinks/plugins/flutter_ijkplayer/ios`)
-  - flutter_plugin_pdf_viewer (from `.symlinks/plugins/flutter_plugin_pdf_viewer/ios`)
   - flutter_sound (from `.symlinks/plugins/flutter_sound/ios`)
   - flutter_webview_plugin (from `.symlinks/plugins/flutter_webview_plugin/ios`)
   - fluttertoast (from `.symlinks/plugins/fluttertoast/ios`)
@@ -99,8 +96,6 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/flutter_drag_scale/ios"
   flutter_ijkplayer:
     :path: ".symlinks/plugins/flutter_ijkplayer/ios"
-  flutter_plugin_pdf_viewer:
-    :path: ".symlinks/plugins/flutter_plugin_pdf_viewer/ios"
   flutter_sound:
     :path: ".symlinks/plugins/flutter_sound/ios"
   flutter_webview_plugin:
@@ -140,7 +135,6 @@ SPEC CHECKSUMS:
   flutter_downloader: 058b9c41564a90500f67f3e432e3524613a7fd83
   flutter_drag_scale: 545fd546a1e968bd965883f0511b1c47f049f37d
   flutter_ijkplayer: ef9006131553deb6d8ae6d7fbd3bcbf93b135930
-  flutter_plugin_pdf_viewer: 7d8e3a03f42d346b2af8840f980b7de95ad5732a
   flutter_sound: 0e8163ceac1e00eb6d894e2ae4641ba726a2c479
   flutter_webview_plugin: ed9e8a6a96baf0c867e90e1bce2673913eeac694
   FlutterIJK: 68b00c1d11162b5016f3611853aa699e198bd1d2

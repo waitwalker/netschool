@@ -81,7 +81,16 @@ class _LaunchAnimationState extends State<LaunchAnimationPage>
     animationController = AnimationController(
         vsync: this, duration: Duration(milliseconds: 2000));
 
-    loadAsset("resources/json/app.json");
+    loadAsset("lib/resources/json/app.json").then((composition){
+      _composition = composition;
+      setState(() {
+
+      });
+    }).then((_){
+      animationController.forward();
+    });
+
+    /// 这里动画完成后进入主界面
 
     super.initState();
   }
@@ -124,7 +133,7 @@ class _LaunchAnimationState extends State<LaunchAnimationPage>
             Positioned(
               bottom: 58,
               child: Image.asset(
-                  'static/images/img_Start_zhongxia_logo.png.png',
+                  'lib/resources/images/img_Start_zhongxia_logo.png.png',
                   width: 183,
                   height: 43),
             )
