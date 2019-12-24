@@ -1,5 +1,8 @@
 import 'dart:collection';
 import 'dart:convert';
+import 'package:NetSchool/common/config/config.dart';
+import 'package:NetSchool/common/const/const.dart';
+import 'package:NetSchool/pages/login/app_login_manager.dart';
 import 'package:convert/convert.dart';
 import 'package:crypto/crypto.dart';
 import 'package:device_info/device_info.dart';
@@ -7,9 +10,6 @@ import 'package:dio/dio.dart';
 import 'package:connectivity/connectivity.dart';
 import 'dart:io';
 import 'package:event_bus/event_bus.dart';
-import 'package:flutter_dayuwen/common/config/config.dart';
-import 'package:flutter_dayuwen/common/const/const.dart';
-import 'package:flutter_dayuwen/pages/login/app_login_manager.dart';
 import 'package:package_info/package_info.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
