@@ -1,15 +1,14 @@
 import 'dart:io';
 
+import 'package:NetSchool/common/network/network_manager.dart';
+import 'package:NetSchool/common/toast/toast.dart';
+import 'package:NetSchool/dao/dao_manager.dart';
+import 'package:NetSchool/models/complete_userInfo_model.dart';
+import 'package:NetSchool/models/login_model.dart';
 import 'package:date_format/date_format.dart';
 import 'package:device_info/device_info.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_dayuwen/common/database/database_manager.dart';
-import 'package:flutter_dayuwen/common/network/network_manager.dart';
-import 'package:flutter_dayuwen/common/toast/toast.dart';
-import 'package:flutter_dayuwen/dao/dao_manager.dart';
-import 'package:flutter_dayuwen/models/interface_config_mode.dart';
-import 'package:flutter_dayuwen/models/login_model.dart';
 import 'package:package_info/package_info.dart';
 
 import 'package:page_transition/page_transition.dart';
