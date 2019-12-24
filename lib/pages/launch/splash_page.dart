@@ -1,30 +1,27 @@
 import 'dart:async';
+import 'package:NetSchool/common/locale/locale_mamager.dart';
+import 'package:NetSchool/common/redux/app_state.dart';
+import 'package:NetSchool/common/theme/theme_manager.dart';
+import 'package:NetSchool/pages/login/app_login_manager.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_dayuwen/common/locale/locale_mamager.dart';
-import 'package:flutter_dayuwen/common/network/network_manager.dart';
-import 'package:flutter_dayuwen/common/redux/app_state.dart';
-import 'package:flutter_dayuwen/common/theme/theme_manager.dart';
-import 'package:flutter_dayuwen/dao/dao_manager.dart';
-import 'package:flutter_dayuwen/pages/login/app_login_manager.dart';
-import 'package:flutter_dayuwen/pages/login/select_identity_page.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:redux/redux.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter/services.dart';
 
 ///
-/// @Class: SplashPage
+/// @Class: LaunchAnimationPage
 /// @Description: 启动动画页
 /// @author: lca
 /// @Date: 2019-08-06
 ///
-class SplashPage extends StatefulWidget {
+class LaunchAnimationPage extends StatefulWidget {
   @override
-  SplashScreenState createState() => SplashScreenState();
+  _LaunchAnimationState createState() => _LaunchAnimationState();
 }
 
-class SplashScreenState extends State<SplashPage>
+class _LaunchAnimationState extends State<LaunchAnimationPage>
     with SingleTickerProviderStateMixin {
   int themeIndex = 0;
   int localeIndex = 0;
