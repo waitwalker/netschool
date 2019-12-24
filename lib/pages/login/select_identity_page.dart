@@ -1,12 +1,13 @@
 import 'dart:ui';
 
+import 'package:NetSchool/common/color/color.dart';
+import 'package:NetSchool/common/redux/app_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_dayuwen/common/color/color.dart';
-import 'package:flutter_dayuwen/common/redux/app_state.dart';
-import 'package:flutter_dayuwen/pages/login/app_login_page.dart';
 import 'package:flutter_redux/flutter_redux.dart';
+
+import 'app_login_page.dart';
 
 ///
 /// @name SelectIdentityPage
