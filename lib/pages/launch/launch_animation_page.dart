@@ -79,53 +79,57 @@ class _LaunchAnimationState extends State<LaunchAnimationPage>
   @override
   void initState() {
     animationController = AnimationController(
-        vsync: this, duration: Duration(milliseconds: 1500));
+        vsync: this, duration: Duration(milliseconds: 2000));
 
     loadAsset("resources/json/app.json");
-    startTime();
 
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: AnnotatedRegion(child: Container(
+    return StoreBuilder(builder: (BuildContext context, Store<AppState> store) {
+      return _buildPage(context, store);
+    });
+  }
+
+  Store<AppState> _getStore() {
+    return StoreProvider.of<AppState>(context);
+  }
+
+  Widget _buildPage(BuildContext context, Store<AppState> store) {
+    var w = MediaQuery.of(context).size.width;
+    var h = MediaQuery.of(context).size.height;
+    if (w / h < 9 / 16.0) {
+      h = (16 / 9) * w;
+    }
+    return Container(
+      // alignment: Alignment.center,
+      // width: MediaQuery.of(context).size.width,
+      // height: MediaQuery.of(context).size.height,
         color: Colors.white,
         child: Stack(
-          fit: StackFit.expand,
+          alignment: Alignment.center,
           children: <Widget>[
-            Column(
-              mainAxisAlignment: MainAxisAlignment.end,
-              mainAxisSize: MainAxisSize.min,
-              children: <Widget>[
-
-                Padding(
-                    padding: EdgeInsets.only(bottom: 30.0),
-                    child: Container(
-                      alignment: Alignment.center,
-                      child: Text(
-                        "北京四中网校",
-                        style: TextStyle(fontSize: 26,fontWeight: FontWeight.w500,color: Color.fromRGBO(0, 0, 0, 0.6)),
-                      ),
-                    )
-                )
-
-              ],),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Image.asset(
-                  'lib/resources/images/logo.png',
-                  width: animation.value * 350,
-                  height: animation.value * 350,
-                ),
-              ],
+            Container(
+              width: w,
+              height: h,
+              // color: Colors.red,
+              child: Lottie(
+                composition: _composition,
+                size: Size(w, h),
+                controller: animationController,
+              ),
             ),
+            Positioned(
+              bottom: 58,
+              child: Image.asset(
+                  'static/images/img_Start_zhongxia_logo.png.png',
+                  width: 183,
+                  height: 43),
+            )
           ],
-        ),
-      ), value: SystemUiOverlayStyle.light),
-    );
+        ));
   }
 }
 
