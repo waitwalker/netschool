@@ -27,6 +27,7 @@ class _LaunchAnimationState extends State<LaunchAnimationPage>
   int localeIndex = 0;
 
   AnimationController animationController;
+  LottieComposition _composition;
   Animation<double> animation;
 
   startTime() async {
