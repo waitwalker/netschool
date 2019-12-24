@@ -1,6 +1,6 @@
+import 'package:NetSchool/common/redux/app_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_dayuwen/common/redux/app_state.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
