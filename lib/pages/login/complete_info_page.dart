@@ -1,15 +1,16 @@
 import 'dart:convert';
 
+import 'package:NetSchool/common/network/network_manager.dart';
+import 'package:NetSchool/common/redux/app_state.dart';
+import 'package:NetSchool/common/toast/toast.dart';
+import 'package:NetSchool/dao/dao_manager.dart';
+import 'package:NetSchool/pages/login/picker_data.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_dayuwen/common/network/network_manager.dart';
-import 'package:flutter_dayuwen/common/redux/app_state.dart';
-import 'package:flutter_dayuwen/common/toast/toast.dart';
-import 'package:flutter_dayuwen/dao/dao_manager.dart';
-import 'package:flutter_dayuwen/pages/login/app_login_manager.dart';
-import 'package:flutter_dayuwen/pages/login/picker_data.dart';
 import 'package:flutter_picker/flutter_picker.dart';
 import 'package:flutter_redux/flutter_redux.dart';
+
+import 'app_login_manager.dart';
 
 ///
 /// @name CompleteInfoPage
