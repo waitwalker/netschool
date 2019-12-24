@@ -1,6 +1,6 @@
 
 
-import 'package:flutter_dayuwen/models/login_model.dart';
+import 'package:NetSchool/models/login_model.dart';
 
 ///
 /// @Class: 单例管理类
