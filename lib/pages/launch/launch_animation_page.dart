@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:convert';
 import 'package:NetSchool/common/locale/locale_mamager.dart';
 import 'package:NetSchool/common/redux/app_state.dart';
 import 'package:NetSchool/common/theme/theme_manager.dart';
@@ -6,6 +7,7 @@ import 'package:NetSchool/pages/login/app_login_manager.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
+import 'package:lottie_flutter/lottie_flutter.dart';
 import 'package:redux/redux.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter/services.dart';
@@ -78,11 +80,8 @@ class _LaunchAnimationState extends State<LaunchAnimationPage>
   void initState() {
     animationController = AnimationController(
         vsync: this, duration: Duration(milliseconds: 1500));
-    animation =
-        CurvedAnimation(parent: animationController, curve: Curves.easeOut);
 
-    animation.addListener(() => this.setState(() {}));
-    animationController.forward();
+    loadAsset("resources/json/app.json");
     startTime();
 
     super.initState();
@@ -106,7 +105,7 @@ class _LaunchAnimationState extends State<LaunchAnimationPage>
                     child: Container(
                       alignment: Alignment.center,
                       child: Text(
-                        "龙之门大语文",
+                        "北京四中网校",
                         style: TextStyle(fontSize: 26,fontWeight: FontWeight.w500,color: Color.fromRGBO(0, 0, 0, 0.6)),
                       ),
                     )
@@ -128,4 +127,11 @@ class _LaunchAnimationState extends State<LaunchAnimationPage>
       ), value: SystemUiOverlayStyle.light),
     );
   }
+}
+
+Future<LottieComposition> loadAsset(String assetName) async {
+  return await rootBundle
+      .loadString(assetName)
+      .then<Map<String,dynamic>>((String data)=>json.decode(data))
+      .then((Map<String,dynamic> map) => LottieComposition.fromMap(map));
 }

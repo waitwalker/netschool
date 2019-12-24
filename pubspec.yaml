@@ -99,7 +99,7 @@ dependencies:
   webview_flutter: ^0.3.13
 
   # pdf
-  flutter_plugin_pdf_viewer: ^1.0.7
+  #flutter_plugin_pdf_viewer: ^1.0.7
 
   cached_network_image: ^2.0.0-rc.1
 
@@ -164,6 +164,7 @@ flutter:
     - lib/resources/correctOrError/
     - lib/resources/rules/
     - lib/resources/strokes/
+    - - lib/resources/json/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
