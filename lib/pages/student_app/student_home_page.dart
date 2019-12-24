@@ -1,13 +1,10 @@
 import 'dart:async';
 import 'dart:math';
+import 'package:NetSchool/pages/login/app_login_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_dayuwen/common/redux/app_state.dart';
-import 'package:flutter_dayuwen/pages/login/app_login_manager.dart';
 import 'package:flutter_ijkplayer/flutter_ijkplayer.dart';
-import 'package:flutter_redux/flutter_redux.dart';
-import 'package:flutter_sound/flutter_sound.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 import 'dart:convert';
 
@@ -248,7 +245,7 @@ class _StudentHomeState extends State<StudentHomePage> {
             {'k': 'platform', 'v': "2"},
           ],
           userAgent: "|appVersion=1.0.2",
-          url: AppLoginManager.instance.configModel.h5Url.studentUrl,
+          url: "",///AppLoginManager.instance.configModel.h5Url.studentUrl,
 
         ),
     );
