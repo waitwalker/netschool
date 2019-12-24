@@ -1,11 +1,11 @@
 import 'dart:convert';
-import 'package:flutter_dayuwen/common/const/const.dart';
-import 'package:flutter_dayuwen/common/network/network_manager.dart';
-import 'package:flutter_dayuwen/models/code_model.dart';
-import 'package:flutter_dayuwen/models/complete_userInfo_model.dart';
-import 'package:flutter_dayuwen/models/interface_config_mode.dart';
-import 'package:flutter_dayuwen/models/login_model.dart';
-import 'package:flutter_dayuwen/pages/login/app_login_manager.dart';
+import 'package:NetSchool/common/const/const.dart';
+import 'package:NetSchool/common/network/network_manager.dart';
+import 'package:NetSchool/models/code_model.dart';
+import 'package:NetSchool/models/complete_userInfo_model.dart';
+import 'package:NetSchool/models/interface_config_mode.dart';
+import 'package:NetSchool/models/login_model.dart';
+import 'package:NetSchool/pages/login/app_login_manager.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 ///

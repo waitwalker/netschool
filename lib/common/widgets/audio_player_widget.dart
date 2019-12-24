@@ -1,8 +1,8 @@
 import 'dart:async';
+import 'package:NetSchool/common/color/color.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_dayuwen/common/color/color.dart';
 
 /// 播放状态
 enum PlayerState { stopped, playing, paused }
