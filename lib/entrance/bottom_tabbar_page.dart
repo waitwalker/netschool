@@ -44,6 +44,11 @@ class _BottomTabBarControllerState extends State<BottomTabBarController> {
             activeIcon: Icon(Icons.home,color: _selectedColor,),
             title: Text("我的课程",style: TextStyle(color: _currentIndex == 0 ? _selectedColor : _unselectedColor),),
           ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person,color: _unselectedColor,),
+            activeIcon: Icon(Icons.person,color: _selectedColor,),
+            title: Text("个人中心",style: TextStyle(color: _currentIndex == 0 ? _selectedColor : _unselectedColor),),
+          ),
         ],
       ),
     );
