@@ -7,7 +7,7 @@ class BottomTabBarController extends StatefulWidget {
   }
 }
 
-class _BottomTabBarControllerState extends State {
+class _BottomTabBarControllerState extends State<BottomTabBarController> {
 
   final PageController _controller = PageController(initialPage: 0);
 
