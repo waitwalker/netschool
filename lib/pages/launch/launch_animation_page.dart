@@ -91,7 +91,7 @@ class _LaunchAnimationState extends State<LaunchAnimationPage>
     });
 
     /// 这里动画完成后进入主界面
-    Navigator.pushNamedAndRemoveUntil(context, "home", (Route<dynamic> route)=>false);
+    Navigator.pushNamedAndRemoveUntil(context, "bottom_tabbar", (Route<dynamic> route)=>false);
     super.initState();
   }
 

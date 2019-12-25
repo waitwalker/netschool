@@ -2,6 +2,7 @@ import 'package:NetSchool/common/locale/localizations_delegate.dart';
 import 'package:NetSchool/common/redux/app_state.dart';
 import 'package:NetSchool/common/runtime_data/runtime_data.dart';
 import 'package:NetSchool/common/theme/theme_manager.dart';
+import 'package:NetSchool/entrance/bottom_tabbar_page.dart';
 import 'package:NetSchool/pages/launch/launch_animation_page.dart';
 import 'package:NetSchool/pages/placeholder/placeholder_page.dart';
 import 'package:flutter/cupertino.dart';
@@ -49,6 +50,7 @@ class App extends StatelessWidget {
             home: MTTLocalizations(child: LaunchAnimationPage(),),
             routes: <String,WidgetBuilder>{
               "launch_animation":(BuildContext context) => LaunchAnimationPage(),
+              "bottom_tabbar":(BuildContext context)=> BottomTabBarController(),
             },
             onUnknownRoute: (RouteSettings setting) {
               String name = setting.name;
