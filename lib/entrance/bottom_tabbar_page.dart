@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 class BottomTabBarController extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    _BottomTabBarControllerState();
+    return _BottomTabBarControllerState();
   }
 }
 
@@ -47,7 +47,7 @@ class _BottomTabBarControllerState extends State<BottomTabBarController> {
           BottomNavigationBarItem(
             icon: Icon(Icons.person,color: _unselectedColor,),
             activeIcon: Icon(Icons.person,color: _selectedColor,),
-            title: Text("个人中心",style: TextStyle(color: _currentIndex == 0 ? _selectedColor : _unselectedColor),),
+            title: Text("个人中心",style: TextStyle(color: _currentIndex == 1 ? _selectedColor : _unselectedColor),),
           ),
         ],
       ),

@@ -70,16 +70,13 @@ class _LaunchAnimationState extends State<LaunchAnimationPage>
 
   @override
   void dispose() {
-    if (animationController != null) {
-      animationController.dispose();
-    }
     super.dispose();
   }
 
   @override
   void initState() {
     animationController = AnimationController(
-        vsync: this, duration: Duration(milliseconds: 4000));
+        vsync: this, duration: Duration(milliseconds: 3000));
 
     loadAsset("lib/resources/json/app.json").then((composition){
       _composition = composition;
@@ -90,8 +87,12 @@ class _LaunchAnimationState extends State<LaunchAnimationPage>
       animationController.forward();
     });
 
-    /// 这里动画完成后进入主界面
-    Navigator.pushNamedAndRemoveUntil(context, "bottom_tabbar", (Route<dynamic> route)=>false);
+    Future.delayed(Duration(seconds: 4)).then((value){
+      print("value:$value");
+      /// 这里动画完成后进入主界面
+      Navigator.pushNamedAndRemoveUntil(context, "bottom_tabbar", (Route<dynamic> route)=>false);
+    });
+
     super.initState();
   }
 

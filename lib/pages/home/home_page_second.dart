@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class HomeSecondPage extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    _HomeSecondState();
+    return _HomeSecondState();
   }
 }
 
