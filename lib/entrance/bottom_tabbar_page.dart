@@ -19,7 +19,6 @@ class _BottomTabBarControllerState extends State<BottomTabBarController> {
         physics: NeverScrollableScrollPhysics(),
         controller: _controller,
         children: <Widget>[
-
         ],
       ),
     );
