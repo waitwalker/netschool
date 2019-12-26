@@ -19,6 +19,32 @@ class _HomeState extends State<HomePage> {
       ),
     );
 
+  }
+}
 
+class Entry {
+  final String title;
+  final List<Entry> children;
+  Entry(this.title,[this.children = const<Entry>[]]);
+}
+
+
+class EntryItem extends StatelessWidget {
+
+  final Entry entry;
+
+  const EntryItem(this.entry);
+
+  Widget _buildTitles(Entry root) {
+    if (root.children.isEmpty) {
+      return ListTile(title:  Text(root.title),);
+    }
+  }
+
+
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    throw UnimplementedError();
   }
 }
