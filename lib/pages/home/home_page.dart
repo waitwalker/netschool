@@ -22,6 +22,42 @@ class _HomeState extends State<HomePage> {
   }
 }
 
+final List<Entry> data = <Entry>[
+  Entry("Chapter A",
+    <Entry>[
+      Entry("Section A0",
+        <Entry>[
+          Entry("Item A0-1"),
+          Entry("Item A0-2"),
+          Entry("Item A0-3"),
+        ],
+      ),
+      Entry("Section A1"),
+      Entry("Section A2"),
+    ],
+  ),
+  new Entry('Chapter B',
+    <Entry>[
+      new Entry('Section B0'),
+      new Entry('Section B1'),
+    ],
+  ),
+  new Entry('Chapter C',
+    <Entry>[
+      new Entry('Section C0'),
+      new Entry('Section C1'),
+      new Entry('Section C2',
+        <Entry>[
+          new Entry('Item C2.0'),
+          new Entry('Item C2.1'),
+          new Entry('Item C2.2'),
+          new Entry('Item C2.3'),
+        ],
+      ),
+    ],
+  ),
+];
+
 class Entry {
   final String title;
   final List<Entry> children;
@@ -39,12 +75,16 @@ class EntryItem extends StatelessWidget {
     if (root.children.isEmpty) {
       return ListTile(title:  Text(root.title),);
     }
+    return ExpansionTile(
+      key: PageStorageKey<Entry>(root),
+      title: Text(root.title),
+      children: root.children.map(_buildTitles).toList(),
+    );
   }
 
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return _buildTitles(entry);
   }
 }
