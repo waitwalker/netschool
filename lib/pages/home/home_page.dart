@@ -14,8 +14,9 @@ class _HomeState extends State<HomePage> {
       appBar: AppBar(
         title: Text("主页"),
       ),
-      body: Container(
-        child: RaisedButton(child: Icon(Icons.delete),onPressed: (){},),
+      body: ListView.builder(
+        itemBuilder: (BuildContext context, int index) => EntryItem(data[index]),
+        itemCount: data.length,
       ),
     );
 
