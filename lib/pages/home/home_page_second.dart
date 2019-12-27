@@ -1,3 +1,4 @@
+import 'package:NetSchool/pages/home/second_page.dart';
 import 'package:flutter/material.dart';
 
 class HomeSecondPage extends StatefulWidget {
@@ -15,7 +16,12 @@ class _HomeSecondState extends State<HomeSecondPage> {
         title: Text("主页2"),
       ),
       body: Container(
-        child: RaisedButton(child: Icon(Icons.delete),onPressed: (){},),
+        child: RaisedButton(child: Icon(Icons.delete),onPressed: (){
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => SecondScreen()),
+          );
+        },),
       ),
     );
 
