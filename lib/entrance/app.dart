@@ -47,6 +47,7 @@ class App extends StatelessWidget {
             locale: store.state.locale,
             supportedLocales: [store.state.locale,Locale('zh', 'Hans'),],
             theme: store.state.theme.themeData,
+            darkTheme: ThemeData.dark(),
             home: MTTLocalizations(child: LaunchAnimationPage(),),
             routes: <String,WidgetBuilder>{
               "launch_animation":(BuildContext context) => LaunchAnimationPage(),

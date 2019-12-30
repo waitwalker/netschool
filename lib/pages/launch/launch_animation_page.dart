@@ -87,6 +87,8 @@ class _LaunchAnimationState extends State<LaunchAnimationPage>
       animationController.forward();
     });
 
+    readLocalCacheData();
+
     Future.delayed(Duration(seconds: 4)).then((value){
       print("value:$value");
       /// 这里动画完成后进入主界面
