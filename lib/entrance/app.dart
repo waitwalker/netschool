@@ -36,6 +36,7 @@ class App extends StatelessWidget {
           return MaterialApp(
             debugShowCheckedModeBanner: false, ///去掉debug标签
             debugShowMaterialGrid: false,
+            /// 设置国际化语言
             localizationsDelegates: <LocalizationsDelegate<dynamic>>[
               GlobalMaterialLocalizations.delegate,
               GlobalWidgetsLocalizations.delegate,
