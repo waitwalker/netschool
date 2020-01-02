@@ -42,7 +42,6 @@ class App extends StatelessWidget {
               GlobalWidgetsLocalizations.delegate,
               MTTLocalizationsDelegate.delegate,
               ChineseCupertinoLocalizations.delegate, // 自定义的delegate
-
               DefaultCupertinoLocalizations.delegate, // 目前只包含英文
             ],
             locale: store.state.locale,
